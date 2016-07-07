@@ -1,3 +1,5 @@
+package Bisection;
+
 /**
  * Created by Frank on 16/6/30.
  */

@@ -1,11 +1,14 @@
-/**
+package Bisection; /**
  * Created by Frank on 16/6/30.
  */
 
-/**
- * public class SVNRepo {
- *     public static boolean isBadVersion(int k);
- * }
+
+  public class SVNRepo {
+      public static boolean isBadVersion(int k){
+          return true;
+      }
+  }
+ /**
  * you can use SVNRepo.isBadVersion(k) to judge whether
  * the kth code version is bad or not.
  */
@@ -30,4 +33,5 @@ class FirstBadVersion {
             return start;
         } else return end;
     }
+
 }

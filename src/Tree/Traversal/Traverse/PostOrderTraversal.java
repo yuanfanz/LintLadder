@@ -1,4 +1,4 @@
-package main.java.Tree.Traverse;
+package Tree.Traversal.Traverse;
 
 import java.util.ArrayList;
 
@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Created by yuanf on 2016/7/6.
  */
 public class PostOrderTraversal {
-    public ArrayList<Integer> postorderTraversal(main.java.Tree.Traverse.TreeNode root) {
+    public ArrayList<Integer> postorderTraversal(Tree.Traversal.Traverse.TreeNode root) {
         ArrayList<Integer> postOrder = new ArrayList<>();
         if (root == null){
             return postOrder;

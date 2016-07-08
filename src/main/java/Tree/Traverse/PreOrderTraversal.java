@@ -1,4 +1,4 @@
-package Tree.Traverse;
+package main.java.Tree.Traverse;
 
 import java.util.ArrayList;
 
@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Created by Frank on 16/7/6.
  */
 public class PreOrderTraversal {
-    public ArrayList<Integer> preorderTraversal(Tree.Traverse.TreeNode root) {
+    public ArrayList<Integer> preorderTraversal(main.java.Tree.Traverse.TreeNode root) {
         ArrayList<Integer> preOrder = new ArrayList<>();
         if (root == null) {
             return preOrder;
@@ -14,7 +14,7 @@ public class PreOrderTraversal {
         traverse(preOrder, root);
         return preOrder;
     }
-    private void traverse(ArrayList<Integer> preOrder, Tree.Traverse.TreeNode root){
+    private void traverse(ArrayList<Integer> preOrder, main.java.Tree.Traverse.TreeNode root){
         if(root == null){
             return;
         }

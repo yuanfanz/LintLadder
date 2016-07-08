@@ -1,4 +1,4 @@
-package Bisection;
+package main.java.Bisection;
 
 /**
  * Created by Frank on 16/6/29.

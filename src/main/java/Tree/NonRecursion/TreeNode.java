@@ -1,4 +1,4 @@
-package Tree.NonRecursion;
+package main.java.Tree.NonRecursion;
 
 /**
  * Created by Frank on 16/7/6.

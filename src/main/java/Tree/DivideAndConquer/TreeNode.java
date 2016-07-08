@@ -1,4 +1,4 @@
-package Tree.DivideAndConquer;
+package main.java.Tree.DivideAndConquer;
 
 /**
  * Created by Frank on 16/7/6.

@@ -1,4 +1,4 @@
-package Tree.Traverse;
+package main.java.Tree.Traverse;
 
 import java.util.ArrayList;
 
@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Created by Frank on 16/7/6.
  */
 public class InOrderTraversal {
-    public ArrayList<Integer> inorderTraversal(Tree.Traverse.TreeNode root) {
+    public ArrayList<Integer> inorderTraversal(main.java.Tree.Traverse.TreeNode root) {
         ArrayList<Integer> inOrder = new ArrayList<>();
         if(root == null){
             return inOrder;

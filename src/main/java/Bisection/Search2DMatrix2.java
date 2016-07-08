@@ -1,4 +1,4 @@
-package Bisection;
+package main.java.Bisection;
 
 public class Search2DMatrix2 {
     /**

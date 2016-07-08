@@ -1,4 +1,4 @@
-package Tree.Traverse;
+package main.java.Tree.Traverse;
 
 /**
  * Created by Frank on 16/7/6.

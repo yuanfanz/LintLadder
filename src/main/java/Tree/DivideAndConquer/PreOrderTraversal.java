@@ -1,4 +1,4 @@
-package Tree.DivideAndConquer;
+package main.java.Tree.DivideAndConquer;
 
 import java.util.ArrayList;
 

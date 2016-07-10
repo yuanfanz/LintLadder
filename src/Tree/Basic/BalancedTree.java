@@ -3,17 +3,6 @@ package Tree.Basic;
 /**
  * Created by yuanf on 2016/7/8.
  */
-/**
- * Definition of TreeNode:
- * public class TreeNode {
- *     public int val;
- *     public TreeNode left, right;
- *     public TreeNode(int val) {
- *         this.val = val;
- *         this.left = this.right = null;
- *     }
- * }
- */
 class ResultType {
     public boolean isBalanced;
     public int maxDepth;

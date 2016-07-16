@@ -10,6 +10,9 @@ public class UniquePaths {
      */
     public int uniquePaths(int m, int n) {
         // write your code here
+        if(m == 0 || n == 0){
+            return 0;
+        }
         //state
         int[][] sum = new int[m][n];
         //initialization

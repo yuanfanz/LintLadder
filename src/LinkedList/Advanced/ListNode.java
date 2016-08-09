@@ -1,4 +1,4 @@
-package LinkedList;
+package LinkedList.Advanced;
 
 /**
  * Created by Frank on 16/7/26.

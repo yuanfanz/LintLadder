@@ -9,7 +9,7 @@ public class RemoveNodeByValue {
      * @param val an integer
      * @return a ListNode
      */
-    public ListNode removeElements(ListNode head, int val) {
+    public static ListNode removeElements(ListNode head, int val) {
         // Write your code here
         if(head == null){
             return null;

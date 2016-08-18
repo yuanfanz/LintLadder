@@ -95,4 +95,3 @@ public class CopyListWithRandomPointer {
         return dummy;
     }
 }
-}

@@ -1,4 +1,4 @@
-package Array;
+package Array.Subarray;
 
 /**
  * Created by Frank on 16/8/9.

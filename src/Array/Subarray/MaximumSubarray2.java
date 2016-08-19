@@ -1,4 +1,4 @@
-package Array;
+package Array.Subarray;
 
 import java.util.ArrayList;
 

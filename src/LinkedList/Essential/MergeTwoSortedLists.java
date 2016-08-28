@@ -3,7 +3,7 @@ package LinkedList.Essential;
 /**
  * Created by Frank on 16/8/4.
  */
-public class MergeTwoSortedArrays {
+public class MergeTwoSortedLists {
     /**
      * @param ListNode l1 is the head of the linked list
      * @param ListNode l2 is the head of the linked list

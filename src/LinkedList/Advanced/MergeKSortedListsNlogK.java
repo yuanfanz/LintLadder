@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Created by Frank on 16/8/4.
  */
-public class MergerKSortedListsNlogK {
+public class MergeKSortedListsNlogK {
     /**
      * @param lists: a list of ListNode
      * @return: The head of one sorted list.
@@ -57,6 +57,7 @@ public class MergerKSortedListsNlogK {
         }
         return lists.get(0);
     }
+
     private ListNode merge(ListNode l1, ListNode l2){
         if(l1 == null && l2 == null){
             return null;

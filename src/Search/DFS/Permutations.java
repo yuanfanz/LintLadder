@@ -1,4 +1,4 @@
-package Search;
+package Search.DFS;
 
 import java.util.ArrayList;
 

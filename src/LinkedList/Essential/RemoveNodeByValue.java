@@ -26,4 +26,20 @@ public class RemoveNodeByValue {
         }
         return dummy.next;
     }
+    public ListNode removeElements2(ListNode head, int val) {
+        // Another solution for this problem
+        if (head == null) return null;
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+        head = dummy;
+        while (head != null && head.next != null) {
+            if (head.next.val == val) {
+                while (head.next != null && head.next.val == val) {
+                    head.next = head.next.next;
+                }
+            }
+            head = head.next;
+        }
+        return dummy.next;
+    }
 }

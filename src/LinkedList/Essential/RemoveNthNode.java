@@ -9,29 +9,27 @@ public class RemoveNthNode {
      * @param n: An integer.
      * @return: The head of linked list.
      */
-    public ListNode removeNthFromEnd(ListNode head, int n) {
+    ListNode removeNthFromEnd(ListNode head, int n) {
         // write your code here
-        if(head == null){
+        if (head == null) {
             return null;
         }
-        ListNode first = head;
-        ListNode last = head;
         ListNode dummy = new ListNode(0);
         dummy.next = head;
-        for(int i = 0; i <= n; ++i){
-            if(last == null){
-                if(i == n){
-                    dummy.next = dummy.next.next;
-                }
+        ListNode tmp = head;
+        head = dummy;
+        while (n != 0) {
+            if (tmp == null) {
                 return dummy.next;
             }
-            last = last.next;
+            tmp = tmp.next;
+            n--;
         }
-        while(last != null){
-            first = first.next;
-            last = last.next;
+        while (tmp != null) {
+            head = head.next;
+            tmp = tmp.next;
         }
-        first.next = first.next.next;
+        head.next = head.next.next;
         return dummy.next;
     }
 }

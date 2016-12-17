@@ -11,39 +11,36 @@ public class ReverseLinkedList2 {
      */
     public ListNode reverseBetween(ListNode head, int m , int n) {
         // write your code
-        if(head == null){
-            return null;
-        }
-        //find prevM
+        if (head == null || head.next == null || m >= n) return head;
         ListNode dummy = new ListNode(0);
         dummy.next = head;
-        ListNode nee = dummy;
-        while(m > 1){
-            nee = nee.next;
+        head = dummy;
+        while (m != 1) {
+            head = head.next;
             m--;
         }
-        ListNode prevM = nee;
-        ListNode mNode = nee.next;
-        nee = dummy;
-        while(n > 0){
-            nee = nee.next;
+        ListNode prevM = head;
+        ListNode mNode = head.next;
+        head = dummy;
+        while (n != 0) {
+            head = head.next;
             n--;
         }
-        ListNode nNode = nee;
-        ListNode postN = nee.next;
-        reverse(prevM, mNode, postN);
+        ListNode nNode = head;
+        ListNode postN = head.next;
+        nNode = reverse(mNode, postN);
         prevM.next = nNode;
         mNode.next = postN;
         return dummy.next;
     }
-    private ListNode reverse(ListNode prevM, ListNode m, ListNode postN){
-
-        while(m != postN){
-            ListNode tmp = m.next;
-            m.next = prevM;
-            prevM = m;
-            m = tmp;
+    private ListNode reverse(ListNode head, ListNode last) {
+        ListNode prev = null;
+        while (head != last) {
+            ListNode tmp = head.next;
+            head.next = prev;
+            prev = head;
+            head = tmp;
         }
-        return prevM;
+        return prev;
     }
 }

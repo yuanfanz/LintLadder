@@ -20,7 +20,7 @@ public class RemoveNodeByValue {
         while(curr.next != null){
             if(curr.next.val == val){
                 curr.next = curr.next.next;
-            } else {
+            } else { //if-else is very brilliant use here, avoid the condition that have same value consecutively
                 curr = curr.next;
             }
         }

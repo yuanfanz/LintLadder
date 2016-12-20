@@ -9,7 +9,7 @@ public class ReverseLinkedList2 {
      * @oaram m and n
      * @return: The head of the reversed ListNode
      */
-    public ListNode reverseBetween(ListNode head, int m , int n) {
+    public static ListNode reverseBetween(ListNode head, int m , int n) {
         // write your code
         if (head == null || head.next == null || m >= n) return head;
         ListNode dummy = new ListNode(0);
@@ -33,7 +33,7 @@ public class ReverseLinkedList2 {
         mNode.next = postN;
         return dummy.next;
     }
-    private ListNode reverse(ListNode head, ListNode last) {
+    private static ListNode reverse(ListNode head, ListNode last) {
         ListNode prev = null;
         while (head != last) {
             ListNode tmp = head.next;

@@ -5,7 +5,7 @@ package LinkedList.Basic;
  */
     public class ListNode {
     int val;
-    ListNode next;
+    public ListNode next;
 
     ListNode(int val) {
         this.val = val;

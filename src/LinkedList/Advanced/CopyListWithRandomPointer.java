@@ -48,50 +48,44 @@ public class CopyListWithRandomPointer {
      * @param head: The head of linked list with a random pointer.
      * @return: A new head of a deep copy of the list.
      */
-    public RandomListNode copy(RandomListNode head) {
+    public RandomListNode copy2(RandomListNode head) {
         // write your code here
         if(head == null){
             return null;
         }
-        copyNext(head);
-        copyRandom(head);
+        copyNode(head);
+        copyPointer(head);
         return split(head);
     }
-    private void copyNext(RandomListNode head){
-        if(head == null){
-            return;
-        }
-        while(head != null){
+    private void copyNode(RandomListNode head){
+        if (head == null) return;
+        while (head != null) {
+            RandomListNode tmp = head.next;
             RandomListNode newNode = new RandomListNode(head.label);
-            newNode.next = head.next;
             head.next = newNode;
+            newNode.next = tmp;
             head = head.next.next;
         }
     }
-    private void copyRandom(RandomListNode head){
-        if(head == null){
-            return;
-        }
-        while(head != null){
-            if(head.random != null){
+    private void copyPointer(RandomListNode head){
+        if (head == null) return;
+        while (head != null) {
+            if (head.random != null) {
                 head.next.random = head.random.next;
             }
             head = head.next.next;
         }
     }
     private RandomListNode split(RandomListNode head){
-        if(head == null){
-            return null;
-        }
-        RandomListNode dummy = head.next;
-        while(head != null){
-            RandomListNode tmp = head.next;
-            head.next = tmp.next;
+        if (head == null) return null;
+        RandomListNode dummy = new RandomListNode(0);
+        RandomListNode newHead = dummy;
+        while (head != null) {
+            newHead.next = head.next;
+            head.next = head.next.next;
+            newHead = newHead.next;
             head = head.next;
-            if(tmp.next != null){
-                tmp.next = tmp.next.next;
-            }
         }
-        return dummy;
+        return dummy.next;
     }
 }

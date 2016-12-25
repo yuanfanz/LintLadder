@@ -44,10 +44,6 @@ public class TreePathSum {
         return result;
     }
 
-    public void main(String args[]){
-        
-    }
-
     /**
      * @param root the root of binary tree
      * @param target an integer

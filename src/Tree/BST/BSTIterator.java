@@ -1,8 +1,10 @@
-package Tree.Advanced;
+package Tree.BST;
 
 /**
  * Created by Frank on 16/7/14.
  */
+
+import Tree.Advanced.*;
 
 import java.util.Stack;
 
@@ -24,11 +26,11 @@ import java.util.Stack;
  * }
  */
 public class BSTIterator {
-    private Stack<TreeNode> stack = new Stack<TreeNode>();
-    private TreeNode curt;
+    private Stack<Tree.Advanced.TreeNode> stack = new Stack<Tree.Advanced.TreeNode>();
+    private Tree.Advanced.TreeNode curt;
 
     //@param root: The root of binary tree.
-    public BSTIterator(TreeNode root) {
+    public BSTIterator(Tree.Advanced.TreeNode root) {
         // write your code here
         curt = root;
     }
@@ -40,14 +42,14 @@ public class BSTIterator {
     }
 
     //@return: return next node
-    public TreeNode next() {
+    public Tree.Advanced.TreeNode next() {
         // write your code here
         while(curt != null){
             stack.push(curt);
             curt = curt.left;
         }
         curt = stack.pop();
-        TreeNode node = curt;
+        Tree.Advanced.TreeNode node = curt;
         curt = curt.right;
 
         return node;

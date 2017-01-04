@@ -1,4 +1,4 @@
-package Tree.Basic;
+package Tree.BST;
 
 /**
  * Created by Frank on 16/7/11.

@@ -50,7 +50,7 @@ public class Serialize {
      * designed by yourself, and deserialize it here as you serialize it in
      * "serialize" method.
      */
-    public TreeNode deserialize(String data) {
+    public static TreeNode deserialize(String data) {
         // write your code here
         if (data.equals("{}")) return null;
         String[] set = data.substring(1, data.length() - 1).split(",");

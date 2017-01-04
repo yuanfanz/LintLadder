@@ -1,11 +1,11 @@
-package Tree.Advanced;
+package Tree.BST;
 
 /**
  * Created by Frank on 16/7/6.
  */
 public class TreeNode {
     int val;
-    public TreeNode left;
-    public TreeNode right;
+    TreeNode left;
+    TreeNode right;
     TreeNode(int x) { val = x; }
 }

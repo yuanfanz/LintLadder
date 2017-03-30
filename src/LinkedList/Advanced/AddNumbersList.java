@@ -42,7 +42,6 @@ public class AddNumbersList {
         if(carry != 0){
             ListNode newNode = new ListNode(carry);
             nee.next = newNode;
-            nee = nee.next;
         }
         return dummy.next;
     }

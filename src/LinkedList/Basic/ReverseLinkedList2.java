@@ -30,12 +30,12 @@ public class ReverseLinkedList2 {
         ListNode postN = head.next;
         nNode = reverse(mNode, postN);
         prevM.next = nNode;
-        mNode.next = postN;
         return dummy.next;
     }
-    private static ListNode reverse(ListNode head, ListNode last) {
-        ListNode prev = null;
-        while (head != last) {
+    private static ListNode reverse (ListNode head, ListNode end) {
+        if (head == end) return head;
+        ListNode prev = end;
+        while (head != end) {
             ListNode tmp = head.next;
             head.next = prev;
             prev = head;

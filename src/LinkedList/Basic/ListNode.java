@@ -7,7 +7,7 @@ package LinkedList.Basic;
     int val;
     public ListNode next;
 
-    ListNode(int val) {
+    public ListNode(int val) {
         this.val = val;
         this.next = null;
     }

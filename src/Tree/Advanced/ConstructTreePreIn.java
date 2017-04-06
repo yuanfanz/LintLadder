@@ -9,12 +9,12 @@ public class ConstructTreePreIn {
      *@param inorder : A list of integers that inorder traversal of a tree
      *@return : Root of a tree
      */
-    public TreeNode buildTree(int[] preorder, int[] inorder) {
+    public static TreeNode buildTree(int[] preorder, int[] inorder) {
         // write your code here
         if (preorder == null || inorder == null || preorder.length == 0 || inorder.length == 0) return null;
         return build(preorder, inorder, 0, 0, inorder.length - 1);
     }
-    private TreeNode build(int[] preorder, int[] inorder, int preorderIndex,
+    private static TreeNode build(int[] preorder, int[] inorder, int preorderIndex,
                            int inStart, int inEnd) {
         if (inStart > inEnd || preorderIndex >= preorder.length) return null;
 
